@@ -1,0 +1,36 @@
+MD5-based crypt()
+
+This is a perl5 implementation of the MD5-based crypt() funcion
+commonly found on modern Unix operating systems such as 
+FreeBSD, where this module was born.
+
+The original C code contained the following notice on it
+
+----------------------------------------------------------------------------
+ "THE BEER-WARE LICENSE" (Revision 42):
+ <phk@login.dknet.dk> wrote this file.  As long as you retain this notice you
+ can do whatever you want with this stuff. If we meet some day, and you think
+ this stuff is worth it, you can buy me a beer in return.   Poul-Henning Kamp
+----------------------------------------------------------------------------
+
+This same licensing scheme applies to this code.
+
+This implementation depends on MD5.pm to be correctly installed
+on your system. It has been tested on FreeBSD 2.2.5-RELEASE and
+2.2.6-RELEASE as well as on Digital Unix 3.0B. It should work on
+any system where perl's MD5() works correctly.
+
+Installing Crypt::Passwd::UnixMD5 should be as easy as unpacking the 
+gzipped file and doing
+
+		perl Makefile.PL
+		make
+		make install
+
+Please send bugs, queries, suggestions to
+
+Luis E. Munoz, lem@cantv.net
+
+Good luck.
+
+
